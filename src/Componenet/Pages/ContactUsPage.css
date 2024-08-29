@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  .Ccontact-page {
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .Ccontact-page h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .Ccontact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .Ccontact-info {
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .Cinfo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .Cicon {
+    margin-right: 10px;
+    color: #e97171;
+  }
+  
+  .Ccontact-form {
+    width: 60%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .Cform-group {
+    margin-bottom: 20px;
+  }
+  
+  .Cform-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .Cform-group input,
+  .Cform-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .Cform-group input:focus,
+  .Cform-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    background-color: #e97171;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  

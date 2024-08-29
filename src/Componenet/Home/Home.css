@@ -1,0 +1,86 @@
+.home-container {
+    font-family: Arial, sans-serif;
+}
+
+.search-section {
+    background-image: url('C:\SarCustom\B2B Ecomm\b2b-ecomm\src\assets\homepage-banner1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 70px 20px;
+    text-align: center;
+    height: 150px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-select {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.search-input {
+    padding: 10px;
+    width: 300px;
+    font-size: 14px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #007b5e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: white;
+}
+
+.category {
+    text-align: center;
+    color: #333;
+}
+
+.category p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.home-content {
+    padding: 40px;
+    text-align: center;
+    background: url('C:\SarCustom\B2B Ecomm\b2b-ecomm\src\assets\background.jpg') no-repeat center center;
+    background-size: cover; 
+    color: white; 
+    position: relative; 
+    height: 200px;
+}
+.home-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.home-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 18px;
+}
+.icon {
+    color: #e97171; 
+    transition: color 0.3s ease;
+}
+.category:hover .icon {
+    color: #1abc9c;
+}

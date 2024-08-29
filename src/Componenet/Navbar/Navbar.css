@@ -1,0 +1,134 @@
+.navbar {
+    background: linear-gradient(45deg, #9fd3f5, #ea5e4f);    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar-logo img {
+    height: 60px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin: 0;
+}
+
+.navbar-menu li {
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+}
+
+.navbar-menu li a:visited, 
+.navbar-menu li a:active, 
+.navbar-menu li a:hover {
+    color: inherit; 
+}
+
+.navbar-menu li:hover {
+    color: #1abc9c; 
+    text-decoration: none;
+}
+
+.navbar-icon {
+    display: block;
+    margin: 0 auto 5px;
+    width: 24px;
+    height: 24px;
+}
+
+.arrow-down {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.navbar-signin {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);  
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;  
+    text-align: left;
+    border-radius: 4px;
+}
+
+.signin-button {
+    width: 100%;
+    padding: 8px 10px;
+    background-color: #e97171;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.signin-button:hover {
+    background-color: #008c4a;
+}
+
+.signup-message {
+    font-size: 12px;
+    color: #333;
+}
+
+.signup-message a {
+    color: #00a859;
+    text-decoration: none;
+}
+
+.signup-message a:hover {
+    text-decoration: underline;
+}
+
+.navbar-menu li::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: none;
+    transition: width 0.3s ease;
+    width: 0;
+    margin: 0 auto;
+}
+
+.navbar-menu li:hover::after {
+    background: #1abc9c;  
+    width: 50%;
+}
+
+/* Additional Enhancements */
+.navbar-menu li:hover {
+    color: #1abc9c;
+}
+
+.navbar-menu li:hover a {
+    color: #1abc9c;
+}
+
+.navbar-menu li a:focus {
+    outline: none;
+}

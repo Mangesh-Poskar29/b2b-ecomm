@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  .shopping-page {
+    width: 100%;
+  }
+  
+  .Sheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url('C:/SarCustom/B2B Ecomm/b2b-ecomm/src/assets/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 350px;
+    position: relative;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .bulk-btn {
+    background-color: #e95bca;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .bulk-btn:hover {
+    background-color: #b898b3;
+  }
+  
+  .category-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #ffffff;
+  }
+  
+  .category-item {
+    text-align: center;
+  }
+  
+  .category-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .category-item img:hover {
+    transform: scale(1.1);
+  }
+  
+  .category-item p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f3f3f3;
+  }
+  
+  .hero-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .products-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .Sproduct-card {
+    width: 220px;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    height: 250px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .Sproduct-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .Sproduct-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .Sproduct-card p {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .modal-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .go-btn {
+    background-color: #e7c59c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .go-btn:hover {
+    background-color: #0056b3;
+  }
+  
