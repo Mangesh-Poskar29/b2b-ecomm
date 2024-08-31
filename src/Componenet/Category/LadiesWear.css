@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.ladies-wear-page {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.ladies-wear-page h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.ladies-wear-page h1 span {
+    color: #e95bca;
+}
+
+.category-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.category-tags button {
+    background-color: #e95bca;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category-tags button:hover {
+    background-color: #b898b3;
+}
+
+.sort-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.sort-options p {
+    font-size: 16px;
+    color: #333;
+}
+
+.sort-options button {
+    background-color: white;
+    border: 1px solid #e95bca;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sort-options button:hover {
+    background-color: #e95bca;
+    color: white;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+    padding: 15px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-name {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.product-pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.current-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e95bca;
+}
+
+.old-price {
+    font-size: 14px;
+    color: #888;
+    text-decoration: line-through;
+}
+
+.discount {
+    font-size: 14px;
+    color: #e95bca;
+    font-weight: bold;
+}
