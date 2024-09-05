@@ -1,0 +1,45 @@
+.BRbrand-detail-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.BRproducts-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+}
+
+.BRproduct-item {
+    flex: 0 0 auto;
+    min-width: 220px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.BRproduct-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.BRsend-email-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.BRsend-email-button:hover {
+    background-color: #0056b3;
+}

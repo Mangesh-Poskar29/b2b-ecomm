@@ -26,12 +26,15 @@ import CleaningSupply from "./Componenet/Category/CleaningSupply";
 import HomeDecor from "./Componenet/Category/HomeDecor";
 import Jewellry from "./Componenet/Category/Jwellery";
 import Light from "./Componenet/Category/Light";
+import SellerDashboard from "./Componenet/Dashboard/SellerDashboard";
+import BrandDetails from "./Componenet/Home/BrandDetails";
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
+        <Route path="/login/seller" element={<SellerDashboard/>} />
         <Route path="/" element={<Home />} />
         <Route path="/shopping" element={<ShoppingPage />} />
         <Route path="/shopping/women-wear" element={<LadiesWear />} />
@@ -49,6 +52,7 @@ function App() {
         <Route path="/sell" element={<SellPage />} />
         <Route path="/SignIn" element={<SignIn />} />
         <Route path="/SignUp" element={<SignUp />} />
+        <Route path="/brand/:brandId" element={<BrandDetails />} />
         <Route
           path="/products/construction"
           element={<ConstructionProductPage />}

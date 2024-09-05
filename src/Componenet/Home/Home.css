@@ -3,7 +3,7 @@
 }
 
 .search-section {
-    background-image: url('C:\SarCustom\B2B Ecomm\b2b-ecomm\src\assets\homepage-banner1.jpg');
+    background-image: url('C:/SarCustom/B2B Ecomm/b2b-ecomm/src/assets/homepage-banner1.jpg');
     background-size: cover;
     background-position: center;
     padding: 70px 20px;
@@ -38,6 +38,74 @@
     font-size: 14px;
 }
 
+.products-section {
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.products-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.products-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    justify-items: center;
+}
+
+.Hproduct-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Hproduct-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.Hproduct-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.Hproduct-card p {
+    font-size: 16px;
+    color: #007b5e;
+}
+
+.product-button {
+    padding: 8px 12px;
+    background-color: #e97171;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    width: 100%;
+    align-self: flex-end;
+}
+
+.product-button:hover {
+    background-color: #1abc9c;
+}
+
 .categories {
     display: flex;
     justify-content: space-around;
@@ -58,12 +126,13 @@
 .home-content {
     padding: 40px;
     text-align: center;
-    background: url('C:\SarCustom\B2B Ecomm\b2b-ecomm\src\assets\background.jpg') no-repeat center center;
-    background-size: cover; 
-    color: white; 
-    position: relative; 
+    background: url('C:/SarCustom/B2B Ecomm/b2b-ecomm/src/assets/background.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    position: relative;
     height: 200px;
 }
+
 .home-content h1 {
     font-size: 36px;
     margin-bottom: 10px;
@@ -77,10 +146,76 @@
 .home-content p {
     font-size: 18px;
 }
+
 .icon {
-    color: #e97171; 
+    color: #e97171;
     transition: color 0.3s ease;
 }
+
 .category:hover .icon {
     color: #1abc9c;
+}
+
+.categories-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.categories-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.categories-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    gap: 15px; 
+}
+
+.Hcategory-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.Hcategory-card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.Hcategory-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+    flex-grow: 1;
+}
+
+.category-button {
+    padding: 10px 16px;
+    background-color: #007b5e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%; /* Button fills the card width */
+    align-self: stretch;
+}
+
+.category-button:hover {
+    background-color: #1abc9c;
 }

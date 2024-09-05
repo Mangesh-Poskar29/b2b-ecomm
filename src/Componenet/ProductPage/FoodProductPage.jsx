@@ -9,7 +9,7 @@ import Pulses from '../../assets/pulses.jpg';
 import Coffee from '../../assets/coffee.jpg';
 import Tea from '../../assets/tea.jpg';
 import { FaHeart } from 'react-icons/fa';
-import Modal from '../Modal/Modal'; // Import the Modal component
+import Modal from '../Modal/Modal'; 
 
 function FoodProductPage() {
   const products = [

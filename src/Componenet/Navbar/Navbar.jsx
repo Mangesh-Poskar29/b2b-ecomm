@@ -1,24 +1,32 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import CartSidebar from "../Cart/CartSideBar"; 
 import shoppingIcon from "../../icons/shopping-bag.png";
 import sellIcon from "../../icons/store.png";
 import helpIcon from "../../icons/question.png";
 import messageIcon from "../../icons/comment.png";
 import signInIcon from "../../icons/user-profile.png";
+import cartIcon from "../../icons/cart.png";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo1.png";
+
 const Navbar = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
   const toggleDropdown = () => {
     setDropdownVisible(!dropdownVisible);
+  };
+
+  const toggleCart = () => {
+    setIsCartOpen(!isCartOpen);
   };
 
   return (
     <nav className="navbar">
       <div className="navbar-logo">
         <Link to="/">
-          <img src={Logo} alt="" />
+          <img src={Logo} alt="Logo" />
         </Link>
       </div>
       <ul className="navbar-menu">
@@ -46,6 +54,10 @@ const Navbar = () => {
             Message
           </Link>
         </li>
+        <li className="cart" onClick={toggleCart}>
+          <img src={cartIcon} alt="Cart" className="navbar-icon" />
+          Add to Cart <span className="cart-count">0</span>
+        </li>
         <li
           className="navbar-signin"
           onMouseEnter={toggleDropdown}
@@ -65,6 +77,7 @@ const Navbar = () => {
           )}
         </li>
       </ul>
+      <CartSidebar cartItems={[]} isOpen={isCartOpen} toggleCart={toggleCart} />
     </nav>
   );
 };

@@ -1,0 +1,137 @@
+.CYLmodalBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.CYLmodalContainer {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.CYLcloseButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.CYLmodalContent {
+    display: flex;
+    width: 100%;
+}
+
+.CYLmodalLeft {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.CYLmodalImage {
+    max-width: 150px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.CYLmodalSellerInfo {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+}
+
+.CYLmodalRight {
+    flex: 2;
+}
+
+.CYLmodalTitle {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.CYLmodalSubtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+.CYLformGroup {
+    margin-bottom: 20px;
+}
+
+.CYLformLabel {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.CYLformInput, .CYLformSelect, .CYLformTextarea {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.CYLformSelect {
+    height: 45px;
+}
+
+.CYLtoggleUnits {
+    display: flex;
+    margin-top: 10px;
+}
+
+.CYLtoggleButton {
+    padding: 10px 18px;
+    margin-right: 8px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.CYLtoggleButton.active,
+.CYLtoggleButton:hover {
+    background: #007bff;
+    color: white;
+}
+
+.CYLsubmitButton {
+    width: 100%;
+    padding: 14px;
+    background: #00a89e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.CYLsubmitButton:hover {
+    background: #00897b;
+}

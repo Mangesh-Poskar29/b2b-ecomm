@@ -21,7 +21,7 @@ const Modal = ({ isOpen, onClose, product }) => {
           <p><strong>Description:</strong> {product.description}</p>
 
           <div className="modal-buttons">
-            <button className="add-to-cart-button">Add to Cart</button>
+            <button className="add-to-cart-button" >Add to Cart</button>
             <button className="buy-now-button">Buy Now</button>
           </div>
         </div>
